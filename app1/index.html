@@ -10,6 +10,13 @@
 <body>
   <div id="app">
     <p>{{ message }}</p>
+    <input v-model="message">
+    <button v-on:click="handleClick">Click</button>
+  </div>
+  <div id="app2">
+    <ol>
+      <li v-for="item in list">{{ item }}</li>
+    </ol>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>

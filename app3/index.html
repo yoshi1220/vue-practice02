@@ -9,11 +9,10 @@
   </head>
   <body>
     <div id="app">
-      <p>{{ message.value }}</p>
-      <p>{{ message.value.length }}</p>
-      <p>{{ list[2] }}</p>
-      <p>{{ list[num] }}</p>
-      <pre>{{ $data }}</pre>
+      <!-- countプロパティの表示 -->
+      <p>{{ count }}回クリックした</p>
+      <!-- ボタンをクリックするとcountが追加される -->
+      <button v-on:click="increment">カウント追加</button>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>

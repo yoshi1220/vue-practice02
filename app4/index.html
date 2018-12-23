@@ -9,10 +9,10 @@
   </head>
   <body>
     <div id="app">
-      <!-- countプロパティの表示 -->
-      <p>{{ count }}回クリックした</p>
-      <!-- ボタンをクリックするとcountが追加される -->
-      <button v-on:click="increment">カウント追加</button>
+      <svg xmlns="http://www.w3.org/2000/svg" verion="1.1">
+        <circle cx="100" cy="75" v-bind:r="radius" fill="lightpink"></circle>
+      </svg>
+      <input type="range" min="0" max="100" v-model="radius">
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
